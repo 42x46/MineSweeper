@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+    </head>
+
+    <body>
+        <center>
+            <div>
+                <h1>Minesweeper by Corentin Wuisbeek</h1>
+                <h3>Lengte</h3>
+                <input id="length_picker" type="number" min='1' max="200" value = "10">
+                <h3>Breedte</h3>
+                <input id="width_picker" type="number" min='1' max="200" value = "10">
+                <h3>Clicks</h3>
+                <div id="clicker">Times clicked:</div>
+                <div class='timer'>
+                    <h3>Timer</h3>
+                    <p id='display'>0h0m0s</p>
+
+                </div>
+                          
+            </div>
+            <div id='grid_container'></div>  
+            <button onclick="reset()">Reset</button>      
+        </center>
+
+    </body>
+</html>
